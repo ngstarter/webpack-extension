@@ -1,6 +1,8 @@
 # ngstarter-webpack-tasks
 Extends https://github.com/antonybudianto/angular2-starter to have Webpack build
 
+[![npm version](https://badge.fury.io/js/ngstarter-webpack-tasks.svg)](https://badge.fury.io/js/ngstarter-webpack-tasks)
+
 ## Getting started
 1. Copy `webpack.config.js` in this repo to the root of your starter.
 
