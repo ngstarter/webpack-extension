@@ -16,7 +16,7 @@ Extends https://github.com/antonybudianto/angular2-starter to have Webpack build
     require('ngstarter-webpack-tasks');
     ```
     
-    and then change `build-sjs` to `build-webpack`
+    and then change `build-systemjs` to `build-webpack`
     ```js
     gulp.task('build', function (done) {
         runSequence('test', 'build-webpack', 'build-assets', done);
