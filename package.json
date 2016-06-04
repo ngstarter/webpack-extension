@@ -1,6 +1,6 @@
 {
-  "name": "ngstarter-webpack-tasks",
-  "version": "1.0.0-rc.1",
+  "name": "@ngstarter/webpack-extension",
+  "version": "1.0.0-rc.2",
   "description": "Angular 2 Starter extension for Webpack build",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ngstarter/ngstarter-webpack-tasks.git"
+    "url": "git+https://github.com/ngstarter/webpack-extension.git"
   },
   "keywords": [
     "angular2",
@@ -19,9 +19,9 @@
   "author": "Antony Budianto <antonybudianto@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ngstarter/ngstarter-webpack-tasks/issues"
+    "url": "https://github.com/ngstarter/webpack-extension/issues"
   },
-  "homepage": "https://github.com/ngstarter/ngstarter-webpack-tasks#readme",
+  "homepage": "https://github.com/ngstarter/webpack-extension#readme",
   "dependencies": {
     "webpack-stream": "^3.2.0"
   },

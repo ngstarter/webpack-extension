@@ -1,4 +1,4 @@
-# ngstarter-webpack-tasks
+# webpack-extension
 Extends https://github.com/antonybudianto/angular2-starter to have Webpack build
 
 [![npm version](https://badge.fury.io/js/ngstarter-webpack-tasks.svg)](https://badge.fury.io/js/ngstarter-webpack-tasks)
@@ -8,14 +8,14 @@ Extends https://github.com/antonybudianto/angular2-starter to have Webpack build
 
 2. Install the extension in your starter
     ```bash
-    npm install ngstarter-webpack-tasks --save-dev
+    npm install @ngstarter/webpack-extension --save-dev
     ```
 
 3. Go to `tasks/build.js` in your starter, require the extension
     ```js
-    require('ngstarter-webpack-tasks');
+    require('@ngstarter/webpack-extension');
     ```
-    
+
     and then change `build-systemjs` to `build-webpack`
     ```js
     gulp.task('build', function (done) {
