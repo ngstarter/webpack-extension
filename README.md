@@ -6,14 +6,18 @@ Extends https://github.com/antonybudianto/angular2-starter to have Webpack build
 ## Getting started
 1. Copy `webpack.config.js` in this repo to the root of your starter.
 
-2. Install the extension in your starter
+2. Install webpack-stream and the extension in your starter
     ```bash
-    npm install @ngstarter/webpack-extension --save-dev
+    npm install webpack-stream @ngstarter/webpack-extension --save
     ```
 
 3. Go to `tasks/build.js` in your starter, require the extension
     ```js
-    require('@ngstarter/webpack-extension');
+    // Get gulp config
+    var config = require('../config')();
+
+    // Load extension with config
+    require('@ngstarter/webpack-extension')(config);
     ```
 
     and then change `build-systemjs` to `build-webpack`
@@ -24,6 +28,19 @@ Extends https://github.com/antonybudianto/angular2-starter to have Webpack build
     ```
 
 4. Done! Try to build it!
+
+## API
+### Use own webpack config
+```js
+// Get gulp config
+var config = require('../config')();
+
+// Get webpack config
+var webpackConfig = require('../webpack/webpack.config.js');
+
+// Load extension with config and webpackConfig
+require('@ngstarter/webpack-extension')(config, webpackConfig);
+```
 
 ## License
 MIT
