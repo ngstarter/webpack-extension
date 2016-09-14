@@ -11,7 +11,7 @@ function WebpackExtension(config, webpackConfig) {
         runSequence('tsc-app', buildWebpack);
 
         function buildWebpack() {
-            gulp.src(config.tmpApp + 'main.js')
+            gulp.src(config.tmpApp + 'main-ngc.js')
             .pipe(webpack(webpackConfig))
             .pipe(gulp.dest(config.tmpApp))
             .on('finish', done);
